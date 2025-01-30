@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Farol da Ilusão 2025 WEB-DL 1080p x264 DUAL 5.1.part001.mkv - Stream Player</title>
+    <meta name="description"
+        content="Stream high-quality videos and movies in 1080p. Experience seamless playback with multiple player options." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .theme-toggle-btn {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn {
+            border-radius: 8px;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .player-wrapper {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .alert, .card {
+            border-radius: 8px;
+        }
+        footer a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+    <div class="d-flex flex-column min-vh-100">
+        <!-- Header -->
+        <header class="bg-primary text-white py-2 shadow">
+            <div class="d-flex justify-content-between align-items-center container">
+                <h1 class="h4 mb-0 fw-bold">StreamHub</h1>
+                <button id="theme-toggle-btn" class="btn btn-light theme-toggle-btn">
+                    <i class="fa-solid fa-sun"></i> Light Mode
+                </button>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <main class="flex-grow-1 container py-3">
+            <div class="player-wrapper mb-3">
+                <video id="myVideo" src="https://www.tgxdl4.workers.dev/v1/0:/dl/59474/file.mkv?hash=AgADNR" class="w-100" controls>
+                    Your browser does not support the video tag.
+                </video>
+                <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+                <script>
+                    const controls = ["rewind", "audio", "play", "fast-forward", "progress", "current-time", "duration", "captions", "settings", "pip", "airplay", "fullscreen"];
+                    document.addEventListener("DOMContentLoaded", () => {
+                        const player = Plyr.setup("#myVideo", { controls });
+                    });
+                </script>
+            </div>
+
+            <!-- Player options -->
+            <div class="d-flex justify-content-between mb-2 flex-wrap">
+                <a onclick="showLinkModal('intent:https://www.tgxdl4.workers.dev/v1/0:/dl/59474/file.mkv?hash=AgADNR#Intent;package=com.mxtech.videoplayer.ad;end')" class="btn btn-primary flex-fill me-2 mb-2">
+                    <i class="fa fa-play"></i> <b>MX Player</b>
+                </a>
+                <a onclick="showLinkModal('vlc://https://www.tgxdl4.workers.dev/v1/0:/dl/59474/file.mkv?hash=AgADNR')" class="btn btn-primary flex-fill me-2 mb-2">
+                    <i class="fa fa-play"></i> <b>VLC Player</b>
+                </a>
+                <a onclick="showLinkModal('playit://playerv2/video?url=https://www.tgxdl4.workers.dev/v1/0:/dl/59474/file.mkv?hash=AgADNR&amp;title=Farol da Ilusão 2025 WEB-DL 1080p x264 DUAL 5.1.part001.mkv')" class="btn btn-primary flex-fill mb-2">
+                    <i class="fa fa-play"></i> <b>Play it</b>
+                </a>
+            </div>
+
+            <!-- Download options -->
+            <div class="row g-3 mb-2">
+                <div class="col-md-6">
+                    <a onclick="Open_Link('https://telegram.dog/FileAccessV4Bot?start=download_v1/059474')" class="btn btn-secondary w-100">
+                        <i class="fa-brands fa-telegram me-2"></i> Get Telegram File
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a onclick="Open_Link('https://www.tgxdl4.workers.dev/v1/0:/dl/59474/file.mkv?hash=AgADNR')" class="btn btn-success w-100">
+                        <i class="fa-solid fa-download me-2"></i> Download (1.94 GB)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dropdown for DL Servers -->
+            <!-- <div class="mb-2">
+                <select id="download-server" class="btn btn-info w-100" onchange="handleServerChange()">
+                    <option value="https://www.tgxdl4.workers.dev/v1/0:/dl/59474/file.mkv?hash=AgADNR">Other Download Server</option>
+                    <option value="">Download Server 1 (Recommended)</option>
+                    <option value="">Download Server 2 (BackUp)</option>
+                </select>
+            </div> -->
+
+            <a id="demo4" onclick="showLinkModal('tg://resolve?domain=KR_File2link_Bot')" class="btn btn-warning w-100 mb-2">
+                <i class="fa-brands fa-telegram"></i> Create Like This Link
+            </a>
+
+            <a onclick="shareButton()" class="btn btn-danger w-100 mb-3">
+                <i class="fa fa-share-alt"></i> Share Now
+            </a>
+
+            <!-- File information -->
+            <div class="card bg-dark text-light border-secondary mb-4">
+                <div class="card-header border-secondary">
+                    <h5 class="mb-0"><i class="fa-solid fa-circle-info me-2"></i> File Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Name:</strong> Farol da Ilusão 2025 WEB-DL 1080p x264 DUAL 5.1.part001.mkv</p>
+                            <p><strong>Size:</strong> 1.94 GB</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Format:</strong> video/x-matroska</p>
+                            <p><strong>Report ID:</strong> AgADNRMAAkfAoFQ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="alert alert-warning">
+                <h6 class="fw-bold"><i class="fa-solid fa-triangle-exclamation me-2"></i> Disclaimer</h6>
+                <p class="mb-0">This service is provided for online video playback only. We do not store or distribute any content. Please report any content that violates copyright or community guidelines.</p>
+            </div>
+            <div class="alert alert-info text-center" role="alert">
+                <p>If you're getting any error please report at <a href="https://telegram.me/KRXDiscussion" target="_blank">@Telegram Group</a> with Share
+                    Link And Screenshot (:</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="py-2 text-center border-top border-secondary">
+            <p class="mb-0">
+                <a href="tg://resolve?domain=KR_BotX" target="_blank" style="color: blue;">
+                    <i class="fa-solid fa-robot me-2"></i> Made by TeamKRBotX
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        let currentTheme = localStorage.getItem('theme') || 'dark';
+
+        const applyTheme = (theme) => {
+            if (theme === 'light') {
+                document.body.classList.remove('bg-dark', 'text-light');
+                document.body.classList.add('bg-light', 'text-dark');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i> Dark Mode';
+                themeToggleBtn.classList.replace('btn-light', 'btn-dark');
+            } else {
+                document.body.classList.remove('bg-light', 'text-dark');
+                document.body.classList.add('bg-dark', 'text-light');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i> Light Mode';
+                themeToggleBtn.classList.replace('btn-dark', 'btn-light');
+            }
+            localStorage.setItem('theme', theme);
+        };
+
+        themeToggleBtn.addEventListener('click', () => {
+            const newTheme = document.body.classList.contains('bg-dark') ? 'light' : 'dark';
+            applyTheme(newTheme);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            applyTheme(currentTheme);
+        });
+
+
+        function handleServerChange() {
+            const server = document.getElementById('download-server').value;
+            if (server) {
+                window.open(server, '_blank');
+            }
+        }
+        
+        function Open_Link(server) {
+            if (server) {
+                window.open(server, '_blank');
+            }
+        }
+
+    </script>
+        <script src="https://cdn.jsdelivr.net/gh/xdevxd/src@1.0.2/sp/script.js"></script>
+</body>
+
+</html>
